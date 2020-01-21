@@ -2560,12 +2560,12 @@ namespace PdfSharp.Drawing  // #??? Clean up
 
     public void BeginMarkedContentPropList(string layerName)
     {
-         (this.renderer as XGraphicsPdfRenderer).BeginMarkedContentPropList(layerName);
+         (_renderer as XGraphicsPdfRenderer).BeginMarkedContentPropList(layerName);
     }
 
         public void EndMarkedContent()
     {
-         (this.renderer as XGraphicsPdfRenderer).EndMarkedContent();
+         (_renderer as XGraphicsPdfRenderer).EndMarkedContent();
     }
         /// <summary>
         /// Draws a polygon defined by an array of points.
